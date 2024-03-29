@@ -24,7 +24,7 @@
                         <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
                             <i class="fas fa-landmark opacity-10"></i>
                         </div>
-                        <h6 class="text-center mb-0">Form Data Pegawai</h6>
+                        <h6 class="text-center mb-0">Form Gaji Pegawai</h6>
                     </div>
                     <div class="card-body pt-0 p-3 text-start">
                         <h5 class="my-2">Nama: </h5>
