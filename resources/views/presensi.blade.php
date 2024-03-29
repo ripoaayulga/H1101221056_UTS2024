@@ -16,39 +16,61 @@
   <main class="main-content position-relative border-radius-lg ">
     <x-navbar/>
     <div class="container-fluid py-4 w-100">
-      <div class="col-xl-12">
-        <div class="row justify-content-md-center">
-          <div class="col-md-6">
-            <div class="card px-4">
-              <div class="card-header mx-4 p-3 text-center">
-                <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
-                  <i class="fas fa-landmark opacity-10"></i>
-                </div>
-                <h1 class="text-center mb-0">Form Jabatan</h1>
-              </div>
-              <form>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="jabatanInput" class="form-label">Nama Jabatan</label>
-                      <input type="text" class="form-control" id="jabatanInput" placeholder="Masukkan nama jabatan">
+        <div class="col-xl-12">
+            <div class="row justify-content-md-center">
+                <div class="card">
+                        <div class="card-header mx-4 p-3 text-center">
+                            <div class="icon icon-shape icon-lg bg-gradient-primary shadow text-center border-radius-lg">
+                                <i class="fas fa-landmark opacity-10"></i>
+                            </div>
+                            <h6 class="text-center mb-0">Form Data Pegawai</h6>
+                        </div>
+                        <div class="card-body pt-0 p-3 my-2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="nama_pegawai">Nama Pegawai</label>
+                                <input type="text" class="form-control" id="nama_pegawai" placeholder="Masukkan Nama Pegawai">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="tanggal_presensi">Tanggal Presensi</label>
+                                <input type="date" class="form-control" id="tanggal_presensi" placeholder="Masukkan Tanggal Presensi">
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="jam_masuk">Jam Masuk</label>
+                                <input type="time" class="form-control" id="jam_masuk" placeholder="Masukkan Jam Masuk">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="jam_pulang">Jam Pulang</label>
+                                <input type="time" class="form-control" id="jam_pulang" placeholder="Masukkan Jam Pulang">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="status_presensi">Status Presensi</label>
+                                <select class="form-select" id="status_presensi">
+                                    <option value="hadir">Hadir</option>
+                                    <option value="sakit">Sakit</option>
+                                    <option value="izin">Izin</option>
+                                    <option value="cuti">Cuti</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="keterangan">Keterangan</label>
+                                <textarea class="form-control" id="keterangan" placeholder="Masukkan Keterangan"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="mb-3">
-                      <label for="gajiInput" class="form-label">Gaji</label>
-                      <input type="number" class="form-control" id="gajiInput" placeholder="Masukkan gaji">
-                    </div>
-                  </div>
                 </div>
-                <div class="text-end">
-                  <button type="submit" class="btn btn-primary"><i class="fas fa-check"></i>&nbsp;&nbsp;Simpan</button>
-                </div>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </div>
   </main>
   <div class="fixed-plugin">
@@ -127,3 +149,8 @@
 </body>
 
 </html>
+
+
+
+
+
